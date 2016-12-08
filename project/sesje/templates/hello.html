@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    Witaj {{ name }} !
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="submit" name="login" value="logout">
+    </form>
+
+{% endblock %}
